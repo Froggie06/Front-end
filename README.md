@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.dille-kamille.nl/ 
+  https://eu.jellycat.com/?_gl=1*1a3wxym*_up*MQ..*_gs*MQ..&gclid=EAIaIQobChMI5v-R4LPskAMVtJRQBh2FBzY_EAAYASAAEgJAEPD_BwE&gbraid=0AAAAADtxRQCoQsrTDbBaRgl2RKwYXggnp 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
