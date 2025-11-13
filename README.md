@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img width="780" height="16900" alt="image" src="https://github.com/user-attachments/assets/60e7c60f-873e-4e29-ae0b-7e973e57f6d0" />
+  <img alt="image" src="https://github.com/user-attachments/assets/60e7c60f-873e-4e29-ae0b-7e973e57f6d0" />
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
