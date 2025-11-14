@@ -45,7 +45,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img width="780" height="13798" alt="image" src="https://github.com/user-attachments/assets/16ef2566-83ea-46dc-9d22-cfa6553bf15e" />
+
  
 </details>
 
