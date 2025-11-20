@@ -1,4 +1,4 @@
-![breakdown-schets-1](https://github.com/user-attachments/assets/e658979d-1860-411e-b58a-fd354bd04fdd)# Procesverslag
+# Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -70,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="breakdown-schets-1" width="375px">
+  ![breakdown-schets-1](https://github.com/user-attachments/assets/e658979d-1860-411e-b58a-fd354bd04fdd)
 
 
 
