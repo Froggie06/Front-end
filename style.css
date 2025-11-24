@@ -1,0 +1,125 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box; 
+  margin: 0; 
+  text-decoration: none;
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* Header */
+
+header img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Nav */
+
+nav {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.nav-icons img, .ham-menu, .search-btn {
+	width: 3em;
+	height: 3em;
+}
+
+.nav-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* off screen menu */
+.off-screen-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: start;
+    background-color: white;
+    height: 100vh;
+    width: 55%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    font-size: 2em;
+    transition: 350ms ease;
+}
+
+.off-screen-menu ul {
+    margin-top: 3em;
+}
+
+.off-screen-menu li {
+    margin-top: 0.3em;
+}
+
+.off-screen-menu a {
+    color: #C8D4E6;
+}
+
+
+.off-screen-menu.active {
+    right: 0;
+    
+}
+
+
+/* Main */
+
+/* Section 1 */
+
+section img {
+	height: 44rem;
+	max-height: 400px;
+	max-width: 100%;
+	
+	display: block;
+	object-fit: cover;
+}
+
+
+/* Footer */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

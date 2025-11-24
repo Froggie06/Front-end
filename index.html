@@ -1,73 +1,170 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Myrthe Wolters">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Howdy FED2526</title>
+	<title>Jellycat</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
-	<div class="banner"> 
-		<h1>Jellycat Homepage</h1>
-		<p>Discover Christmas Gifts</p>
-	</div>
-
 	<header>
-		<button></button>
-		<button></button>
-		<img src="images/Jellycat-Logo.png" alt="Jellycat logo">
-		<button></button>
-		<button></button>
-		<button></button>
+		<h1 class="hidden">Jellycat Homepage</h1>
+		<p>Discover Christmas Gifts</p>
+	
+    <nav>
+        <!-- Hamburger menu button -->
+        <button class="ham-menu" aria-label="Open menu">
+            <img src="images/ham.svg" alt="">
+        </button>
+        
+        <!-- Off-screen mobile menu -->
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Over</a></li>
+                <li><a href="">Doneer en Reserveer</a></li>
+            </ul>
+        </div>
+        
+        <!-- Search button -->
+        <button class="search-btn" aria-label="Zoeken">
+            <img src="images/search.svg" alt="">
+        </button>
+        
+        <!-- Logo (centered) -->
+        <a href="" class="logo">
+            <img src="images/jellycat-logo.png" alt="Jellycat logo">
+        </a>
+        
+        <!-- Right side icons -->
+        <div class="nav-icons">
+            <a href="" aria-label="Account">
+                <img src="images/user.svg" alt="">
+            </a>
+            <a href="" aria-label="Favorieten">
+                <img src="images/heart.svg" alt="">
+            </a>
+            <button aria-label="Winkelwagen">
+                <img src="images/bag.svg" alt="">
+            </button>
+        </div>
+    </nav>
 	</header>
 
 	<main>
 		<section>
-			<img>
-			<h2></h2>
-			<p></p>
-			<button></button>
+			<img src="images/christmas-jellycat-snow.jpg" alt="jellycats in the snow">
+			<h2>Say hello to our Christmas Jellies</h2>
+			<p>This seasons most-loved companions are here and ready for fun on - and off - the slopes!</p>
+			<a href="">Find festive new friends</a>
 		</section>
 
 		<section>
 			<!-- Carrousel -->
+			 <ul>
+				<li>
+					<img src="images/bartholomew-bear-snowsuit.webp" alt="Brownbear with snowsuit">
+					<h2>Bartholomew Bear 'Snow Suit'</h2>
+					<p>65.00</p>
+				</li>
+
+				<li>
+					<img src="images/galumphous-seal.jpg" alt="White seal with brown spots">
+					<h2>Galumphous Seal</h2>
+					<p>55.00</p>
+				</li>
+
+				<li>
+					<img src="images/peanut-penguin.jpg" alt=" peanut penguin">
+					<h2>Peanut Penguin</h2>
+					<p>From 20.00</p>
+				</li>
+
+				<li>
+					<img src="images/amuseables-marshmellows.jpg" alt="Amuseables pair of marshmallows charm">
+					<h2>Amuseables Pair of Marshmallows Charm</h2>
+					<p>30.00</p>
+				</li>
+
+				<li>
+					<img src="images/blossom-beige-bunny.jpg" alt="Beige bunny with blossom ears and feet">
+					<h2>Blosson Beige Bunny 'Petal'</h2>
+					<p>From 25.00</p>
+				</li>
+
+				<li>
+					<img src="images/amuseables-lettertosanta.webp" alt="amuseable letter tot santa">
+					<h2>Amuseables Letter To Santa</h2>
+					<p>52.00</p>
+				</li>
+			 </ul>
 		</section>
 
 		<section>
-			<img>
-			<button></button>
+			<img src="images/exploreall-seal.jpg" alt="">
+			<a href="">Explore All</a>
 
-			<img>
-			<button></button>
+			<img src="images/lazulia-lilac-dragon-bestsellers.jpg" alt="">
+			<a href="">Bestsellers</a>
 
-			<img>
-			<button></button>
-		</section>
-
-		<section>
-			<h2></h2>
-			<h3></h3>
-
-			<!-- Carrousel -->
-
+			<img src="images/amuseables-cheese-fondue.jpg" alt="">
+			<a href="">Amuseables</a>
 		</section>
 
 		<article>
-			<img>
+			<img src="images/blossoms-catwalk-article.jpg" alt="">
 
-			<h2></h2>
-			<p></p>
+			<h2>Born in Londen. Loved worldwide.</h2>
+			<p>Welcome to the home of the Jellycat family where our  mission is to share joy! Expect the unexpected. 
+				Embrace our gentle humor. Enjoy the exquisite textures and unusual colours… And if one of these characters makes you smile, 
+				make them part of your family too.
+			</p>
 		</article>
 	</main>
 
 	<footer>
+		<article>
+			<h3>Shop Globally</h3>
+				<ul>
+					<li>
+						<a href="">UK</a>
+					</li>
+					<li>
+						<a href="">USA & Canada</a>
+					</li>
+					<li>
+						<a href="">Germany</a>
+					</li>
+					<li>
+						<a href="">France</a>
+					</li>
+					<li>
+						<a href="">Korea</a>
+					</li>
+				</ul>
 	
+			<form>
+				<fieldset>
+					<legend class="visually-hidden">Store</legend>
+					<label for="store-select" class="visually-hidden">Store selector</label>
+					<select id="store-select" name="country" aria-label="Store selector">
+						<option value="" disabled selected>Choose your store</option>
+						<option value="EU" lang="en">Europe & Rest of the world</option>
+						<option value="USA & Canada" lang="en">United States & Canada</option>
+						<option value="Germany" lang="de">Germany</option>
+						<option value="France" lang="fr">France</option>
+						<option value="Korea" lang="ko">Korea</option>
+						<option value="UK" lang="en">United Kingdom</option>
+					</select>
+				</fieldset>
+			</form>
+		</article>
 	</footer>
 	
 
