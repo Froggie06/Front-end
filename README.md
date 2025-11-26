@@ -58,7 +58,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  1. de pagina heeft een knop met veel verschillende opties voor toegankelijkheid 
+  2. kan niet overal naar toe tappen
 
 </details>
 
