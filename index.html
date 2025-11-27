@@ -16,15 +16,38 @@
 </head>
 
 <body>
+	<svg class="hidden">
+      <defs>
+        <g id="searchIcon">
+          <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="15" y1="15" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+		<g id="userIcon">
+			<!-- Hoofd (cirkel) -->
+			<circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+			<!-- Lichaam/schouders (pad) -->
+			<path d="M4 20 C4 16, 7 14, 12 14 C17 14, 20 16, 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+   		 </g>
+      </defs>
+    </svg>
+
+
 	<header>
 		<h1 hidden>Jellycat Homepage</h1>
 		<p>Discover Christmas Gifts →</p>
 	
-    <nav>
-        <!-- Hamburger menu button -->
-        <button class="ham-menu" aria-label="Open menu">
-            <img src="images/ham.svg" alt="">
-        </button>
+	<nav>
+
+		<!-- Hamburger menu button -->
+		<button class="ham-menu" aria-label="Open menu">
+			<svg class="hamburger-icon" viewBox="0 0 40 34" fill="none">
+			<path class="line" d="M 5 5 H 32" />
+			<path class="line" d="M 5 15 H 32" />
+			<path class="line" d="M 5 25 H 32" />
+			</svg>
+		</button>
+
         
         <!-- Off-screen mobile menu -->
             <ul class="off-screen-menu">
@@ -35,8 +58,10 @@
         
         
         <!-- Search button -->
-        <button class="search-btn" aria-label="Zoeken">
-            <img src="images/search.svg" alt="">
+        <button>
+          <svg width="24" height="24">
+            <use href="#searchIcon"/>
+          </svg>
         </button>
         
         <!-- Logo (centered) -->
@@ -47,7 +72,9 @@
         <!-- Right side icons -->
         <div class="nav-icons">
             <a href="" aria-label="Account">
-                <img src="images/user.svg" alt="">
+                <svg width="24" height="24">
+  					<use href="#userIcon"/>
+				</svg>
             </a>
             <a href="" aria-label="Favorieten">
                 <img src="images/heart.svg" alt="">

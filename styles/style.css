@@ -11,7 +11,9 @@
   
 }
 
-
+.hidden {
+	display: none;
+}
 
  
 
@@ -33,7 +35,9 @@
 /* JOUW STYLING */
 /****************/
 
+/*************/
 /* Header */
+/************/
 
 header p {
 	background-color: #f5f5f5;
@@ -57,6 +61,8 @@ button {
 	background-color: white;
 }
 
+
+
 /* Nav */
 
 nav {
@@ -78,15 +84,56 @@ nav {
 	padding-right: 1.5em;
 }
 
+
+
+/* Ham menu button*/
+
 .ham-menu {
-	width: 5em;
-	height: 5em;
+  position: sticky;
+  z-index: 2;
+  width: 5.5em;  
+  height: 5.5em;
+  background: transparent; 
+  border: none;
+  padding: 8px;
+  cursor: pointer;
 }
 
-.search-btn {
-	width: 4em;
-	height: 4em;
+.hamburger-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
+
+.hamburger-icon path {
+  fill: none; 
+  stroke: #000;
+  stroke-width: 2.5; 
+  stroke-linecap: square;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+/* Active state */
+.hamburger-icon.active path:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+  transform-origin: center 15px;
+  
+}
+.hamburger-icon.active path:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.active path:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+  transform-origin: center 15px;
+  
+}
+
+
+
+
+/* overige buttons */
+
 
 .nav-icons img {
 	width: 4em;
@@ -100,28 +147,34 @@ nav {
 	align-items: center;
 }
 
+
+
 /* off screen menu */
 
 .off-screen-menu {
-
     display: flex;
     flex-direction: column;    
     text-align: start;
     background-color: white;
-    height: 100%;
-    width: 100%; /* full screen */
+    width: 100vw; /* vw voor echte full screen */
+    height: 100vh; /* Full screen hoogte */
     position: fixed;
-    bottom: -100%; /* start buiten beeld onderaan */
+    bottom: 0;
     left: 0;
+    transform: translateY(100%); /* Verberg onder scherm */
     font-size: 1.5em;
-    transition: 350ms ease;
-    z-index: 1000; /* zorgt dat menu boven andere content staat */
+    transition: transform 350ms ease;
+    z-index: 1; /* Lager dan hamburger */
+    overflow-y: auto;
+    padding-bottom: 2em; /* Ruimte onderaan */
 	top: 0;
+	padding-top: 2.25rem;
 }
 
 .off-screen-menu ul {
-    margin-top: 3em;
-	
+    margin-top: 5em; /* Ruimte voor hamburger button bovenaan */
+    padding: 0 2em;
+    list-style: none;
 }
 
 .off-screen-menu li {
@@ -133,13 +186,17 @@ nav {
 }
 
 .off-screen-menu.active {
-    bottom: 0; /* schuift het menu naar boven in beeld */
-	
+    transform: translateY(0); /* Schuift omhoog in beeld */
 }
 
 
 
+
+
+/*************/
 /* Main */
+/**************/
+
 
 /* Section 1 */
 .section1-christmas {
@@ -185,9 +242,11 @@ nav {
 	font-size: 1rem;
 }
 
+
+
+
+
 /* section 2 carrousel */
-
-
 .carrousel {
 	position: relative;
 	
@@ -258,6 +317,8 @@ nav {
 	padding: .5rem;
 }
 
+
+/* buttons carrousel */
 #prev-btn, 
 #next-btn {
     position: absolute;
@@ -273,6 +334,9 @@ nav {
 
 #prev-btn { left: 0; }
 #next-btn { right: 0; }
+
+
+
 
 
 /* section 3 categorieen */
@@ -305,6 +369,9 @@ nav {
 	line-height: 1.25rem;
 	font-weight: 300;
 }
+
+
+
 
 /* article */
 
@@ -339,7 +406,12 @@ nav {
 	line-height: 1.5625rem;
 }
 
+
+
+
+/**************/
 /* Footer */
+/**************/
 
 footer {
 	background-color: #33cee5;

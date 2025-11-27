@@ -14,6 +14,7 @@ const itemWidth = list.querySelector('li').offsetWidth + 20; // item + gap
 // actie van het hamburger menu door te klikken
 hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
+  hamMenu.querySelector('.hamburger-icon').classList.toggle("active"); // Toggle op hamburger zelf
   offScreenMenu.classList.toggle("active");
 });
 
