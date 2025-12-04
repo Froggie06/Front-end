@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Myrthe Wolters">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Jellycat Product Overview</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">	
+</head>
+
+
+
+<body>
+    <header>
+		<p>Discover Christmas Gifts →</p>
+	
+	<nav>
+
+		<div class="ham-search">
+			<!-- Hamburger menu button -->
+			<button class="ham-menu" aria-label="Open menu">
+				<svg class="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+					<path class="line" d="M 5 5 H 32" />
+					<path class="line" d="M 5 15 H 32" />
+					<path class="line" d="M 5 25 H 32" />
+				</svg>
+			</button>
+
+			<button>
+			<svg width="24" height="24">
+				<use href="icons/icons.svg#searchIcon"/>
+			</svg>
+			</button>
+		</div>
+        
+        <!-- Off-screen mobile menu -->
+		 <div class="off-screen-menu">
+			<div>
+				<img src="images/jellycat-logo.png" alt="jellycat logo">
+				<button class="closeIcon">
+					<svg>
+						<use href="/icons/icons.svg#closeIcon"></use>
+					</svg>
+				</button>
+			</div>
+			
+            <ul class=hammenu-pages>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Explore All</a></li>
+                <li><a href="#">Discover</a></li>
+				<li><a href="#">Animals</a></li>
+				<li><a href="#">Amuseables</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Baby</a></li>
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Personalised</a></li>
+				<li><a href="#">Gifts</a></li>
+				<li><a href="#">Jelly Journal</a></li>
+            </ul>
+
+			<ul class="hammenu-algemeen">
+				<li><a href="#">Account</a></li>
+				<li><a href="#">Wishlist</a></li>
+				<li><a href="#">Bag</a></li>
+			</ul>
+			
+			<a href="#">Get In Touch</a>
+		 </div>
+        
+        
+        <!-- Logo (centered) -->
+        <a href="" class="logo">
+            <img src="images/jellycat-logo.png" alt="Jellycat logo">
+        </a>
+        
+        <!-- Right side icons -->
+        <div class="nav-icons">
+            <a href="" aria-label="Account">
+                <svg width="24" height="24">
+  					<use href="icons/icons.svg#userIcon"/>
+				</svg>
+            </a>
+            <a href="" aria-label="Favorieten">
+                <svg width="24" height="24">
+					<use href="icons/icons.svg#heartIcon"/>
+				</svg>
+            </a>
+            <button aria-label="Winkelwagen">
+				<svg>
+                <use href="icons/icons.svg#bagIcon"/>
+				</svg>
+            </button>
+        </div>
+    </nav>
+	</header>
+
+    <main>
+        <nav class="breadcrumbs">
+            <ol>
+                <li>
+					<a href="#">Home</a>
+				</li>
+                <li>
+					<a href="#">Animals</a>
+				</li>
+                <li>
+					<a href="#">Dragon & Dinosaurs</a>
+				</li>
+            </ol>
+        </nav>
+
+        <section class="slider">
+			<h2 hidden>product slider</h2>
+
+			<h3>New Arrival</h3>
+			
+			<ul>
+				<li><img src="images/dragon1.jpg" alt="Slide 1"></li>
+				<li><img src="images/dragon2-side.jpg" alt="Slide 2"></li>
+				<li><img src="images/dragon3-back.jpg" alt="Slide 3"></li>
+				<li><img src="images/dragon4-front.jpg" alt="Slide 4"></li>
+			</ul>
+
+			<button id="prev-btn">
+				<svg>
+					<use href="/icons/icons.svg#pijllinksIcon"></use>
+				</svg>
+			</button>
+    		<button id="next-btn">
+				<svg>
+					<use href="/icons/icons.svg#pijlrechtsIcon"></use>
+				</svg>
+			</button>
+		</section>
+
+        <section class="dragon">
+			<h1>Malachy Dragon</h1>
+			<p>€65.00</p>
+
+
+		<div class="stars">
+			<svg>
+				<use href="icons/icons.svg#starIcon"></use>
+			</svg>
+			<svg>
+				<use href="icons/icons.svg#starIcon"></use>
+			</svg>
+			<svg>
+				<use href="icons/icons.svg#starIcon"></use>
+			</svg>
+			<svg>
+				<use href="icons/icons.svg#starIcon"></use>
+			</svg>
+			<svg>
+				<use href="icons/icons.svg#starIcon"></use>
+			</svg>
+
+			<a href="#">(51 reviews)</a>
+		</div>
+	
+			<button disabled>Out of stock</button>
+			<button>
+				<svg width="24" height="24">
+					<use href="icons/icons.svg#heartIcon"/>
+				</svg>
+				Add to Wishlist
+			</button>
+			<button>Notify me when available</button>
+		</section>
+
+
+        <section class="wesay-yousay">
+            <ul>
+                <li>
+					<button data-target="quote1">Just for you...</button>
+				</li>
+                <li>
+					<button data-target="quote2">You say...</button>
+				</li>
+            </ul>
+
+			<div class="quote">
+				<div id="quote1">
+					<p>Malachy Dragon lives life in the fast lane – quite literally. With scales that shimmer like polished chrome and wings built for speed, he’s a racing car champion.</p> 
+
+					<p>A perfectionist in the pit and a blur on the track, Malachy treats every corner like choreography. He swears his fire-breathing gives him an aerodynamic advantage, though Timmy Turtle thinks it’s more of a health and safety risk!</p>
+
+					<p>Off the track, he’s surprisingly low gear: all hot chocolate, lap blankets and long naps to recuperate. </p>
+				</div>
+				
+				<div id="quote2">
+					<p>I love it 3000</p>
+
+					<div class="stars2">
+					<svg>
+						<use href="icons/icons.svg#starIcon"></use>
+					</svg>
+					<svg>
+						<use href="icons/icons.svg#starIcon"></use>
+					</svg>
+					<svg>
+						<use href="icons/icons.svg#starIcon"></use>
+					</svg>
+					<svg>
+						<use href="icons/icons.svg#starIcon"></use>
+					</svg>
+					<svg>
+						<use href="icons/icons.svg#starIcon"></use>
+					</svg>
+					</div>
+
+					<p>chiara.celin3, 22 Mar 2025</p>
+				</div>
+			</div>
+        </section>
+
+        <section class="dropdowns">
+			<ul>
+				<li>
+					<button class="dropdown-header">
+						<h4>Product Details</h4>
+						<svg>
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+					
+				</li>
+				<li>
+					<button class="dropdown-header">
+						<h4>Safety & Care</h4>
+						<svg>
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="dropdown-header">
+						<h4>Delivery Information</h4>
+						<svg>
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="dropdown-header">
+						<h4>Returns</h4>
+						<svg>
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="dropdown-header">
+						<h4>Reviews</h4>
+						<svg>
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<ul>
+							<li>
+								<h5>"Love it!"</h5>
+								<div class="stars">
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+								</div>
+								<p>By Tosia, 2025 Oct 17th</p>
+								<p>I really love it — it’s adorable and amazing — but I get the feeling the quality isn’t quite as good as with the other dragons.</p>
+							</li>
+							<li>
+								<h5>"The stock"</h5>
+								<div class="stars">
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+								</div>
+								<p>By nouf, 2025 Jul 21st</p>
+								<p>Please put this cutie back in stock!!</p>
+							</li>
+							<li>
+								<h5>"PLS BRING IT BACK"</h5>
+								<div class="stars">
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+								</div>
+								<p>By L., 2025 Jul 17th</p>
+								<p>I need it pls restock :((</p>
+							</li>
+							<li>
+								<h5>"Restocks PLEASE"</h5>
+								<div class="stars">
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+								</div>
+								<p>By Jian Yi Lee, 2025 Jul 16th</p>
+								<p>I need this for my friend's birthday present</p>
+							</li>
+							<li>
+								<h5>"More!"</h5>
+								<div class="stars">
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+									<svg>
+										<use href="icons/icons.svg#starIcon"></use>
+									</svg>
+								</div>
+								<p>By Allie, 2025 Jul 9th</p>
+								<p>We need a restock for this cutie!</p>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+			</ul>
+
+		</section>
+
+
+    </main>
+
+    <footer> 
+		<h2 hidden>footer</h2>
+
+		<article>
+			<h3>Shop Globally</h3>
+				<ul>
+					<li>
+						<a href="">UK</a>
+					</li>
+					<li>
+						<a href="">USA & Canada</a>
+					</li>
+					<li>
+						<a href="">Germany</a>
+					</li>
+					<li>
+						<a href="">France</a>
+					</li>
+					<li>
+						<a href="">Korea</a>
+					</li>
+				</ul>
+	
+			<form>
+				<fieldset>
+					<legend class="visually-hidden">Store</legend>
+					<label for="store-select" class="visually-hidden">Store selector</label>
+					<select id="store-select" name="country" aria-label="Store selector">
+						<option value="" disabled selected>Choose your store</option>
+						<option value="EU" lang="en">Europe & Rest of the world</option>
+						<option value="USA & Canada" lang="en">United States & Canada</option>
+						<option value="Germany" lang="de">Germany</option>
+						<option value="France" lang="fr">France</option>
+						<option value="Korea" lang="ko">Korea</option>
+						<option value="UK" lang="en">United Kingdom</option>
+					</select>
+				</fieldset>
+			</form>
+		</article>
+
+		<hr>
+
+		<article>
+			<h3>Shopping</h3>
+				<ul>
+					<li>
+						<a href="">Need Help?</a>
+					</li>
+					<li>
+						<a href="">Delivery</a>
+					</li>
+					<li>
+						<a href="">Returns</a>
+					</li>
+					<li>
+						<a href="">Gifting Options</a>
+					</li>
+					<li>
+						<a href="">Safety & Care</a>
+					</li>
+					<li>
+						<a href="">How We Measure</a>
+					</li>
+				</ul>
+		</article>
+
+	</footer>
+
+	<script defer src="scripts/script.js"></script>
+
+</body>

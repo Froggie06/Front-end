@@ -16,21 +16,6 @@
 </head>
 
 <body>
-	<svg class="hidden">
-      <defs>
-        <g id="searchIcon">
-          <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
-          <line x1="15" y1="15" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </g>
-
-		<g id="userIcon">
-			<!-- Hoofd (cirkel) -->
-			<circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-			<!-- Lichaam/schouders (pad) -->
-			<path d="M4 20 C4 16, 7 14, 12 14 C17 14, 20 16, 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-   		 </g>
-      </defs>
-    </svg>
 
 
 	<header>
@@ -39,30 +24,49 @@
 	
 	<nav>
 
-		<!-- Hamburger menu button -->
-		<button class="ham-menu" aria-label="Open menu">
-			<svg class="hamburger-icon" viewBox="0 0 40 34" fill="none">
-			<path class="line" d="M 5 5 H 32" />
-			<path class="line" d="M 5 15 H 32" />
-			<path class="line" d="M 5 25 H 32" />
-			</svg>
-		</button>
+		<div class="ham-search">
+			<!-- Hamburger menu button -->
+			<button class="ham-menu" aria-label="Open menu">
+				<svg class="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+					<path class="line" d="M 5 5 H 32" />
+					<path class="line" d="M 5 15 H 32" />
+					<path class="line" d="M 5 25 H 32" />
+				</svg>
+			</button>
 
+			<button>
+			<svg width="24" height="24">
+				<use href="icons/icons.svg#searchIcon"/>
+			</svg>
+			</button>
+		</div>
         
         <!-- Off-screen mobile menu -->
-            <ul class="off-screen-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Over</a></li>
-                <li><a href="#">Doneer en Reserveer</a></li>
+		 <div class="off-screen-menu">
+			
+            <ul class=hammenu-pages>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Explore All</a></li>
+                <li><a href="#">Discover</a></li>
+				<li><a href="#">Animals</a></li>
+				<li><a href="#">Amuseables</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Baby</a></li>
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Personalised</a></li>
+				<li><a href="#">Gifts</a></li>
+				<li><a href="#">Jelly Journal</a></li>
             </ul>
+
+			<ul class="hammenu-algemeen">
+				<li><a href="#">Account</a></li>
+				<li><a href="#">Wishlist</a></li>
+				<li><a href="#">Bag</a></li>
+			</ul>
+			
+			<a href="#">Get In Touch</a>
+		 </div>
         
-        
-        <!-- Search button -->
-        <button>
-          <svg width="24" height="24">
-            <use href="#searchIcon"/>
-          </svg>
-        </button>
         
         <!-- Logo (centered) -->
         <a href="" class="logo">
@@ -73,14 +77,18 @@
         <div class="nav-icons">
             <a href="" aria-label="Account">
                 <svg width="24" height="24">
-  					<use href="#userIcon"/>
+  					<use href="icons/icons.svg#userIcon"/>
 				</svg>
             </a>
             <a href="" aria-label="Favorieten">
-                <img src="images/heart.svg" alt="">
+                <svg width="24" height="24">
+					<use href="icons/icons.svg#heartIcon"/>
+				</svg>
             </a>
             <button aria-label="Winkelwagen">
-                <img src="images/bag.svg" alt="">
+				<svg>
+                <use href="icons/icons.svg#bagIcon"/>
+				</svg>
             </button>
         </div>
     </nav>
