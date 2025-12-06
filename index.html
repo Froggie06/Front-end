@@ -27,41 +27,177 @@
 		<div class="ham-search">
 			<!-- Hamburger menu button -->
 			<button class="ham-menu" aria-label="Open menu">
-				<svg class="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+				<svg class="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true">
 					<path class="line" d="M 5 5 H 32" />
 					<path class="line" d="M 5 15 H 32" />
 					<path class="line" d="M 5 25 H 32" />
 				</svg>
 			</button>
 
-			<button>
-			<svg width="24" height="24">
+			<button aria-label="Search">
+			<svg width="24" height="24" aria-hidden="true">
 				<use href="icons/icons.svg#searchIcon"/>
 			</svg>
 			</button>
 		</div>
+
+		<search>
+			<form>
+				<fieldset>
+					<i aria-hidden="true">
+						<svg>
+							<use href="/icons/icons.svg#searchIcon"></use>
+						</svg>
+					</i>
+					<input type="search"  id="searchbar" placeholder="Search our collection..." aria-label="Search our collection">
+				</fieldset>
+				
+			</form>
+		</search>
+
+		
         
         <!-- Off-screen mobile menu -->
 		 <div class="off-screen-menu">
+			<div class="off-screen-menu-heading">
+				<img src="images/jellycat-logo.png" alt="Jellycat logo">
+				<button class="closeIcon" aria-label="Close menu">
+					<svg aria-hidden="true">
+						<use href="/icons/icons.svg#closeIcon"></use>
+					</svg>
+				</button>
+			</div>
 			
             <ul class=hammenu-pages>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Explore All</a></li>
-                <li><a href="#">Discover</a></li>
-				<li><a href="#">Animals</a></li>
-				<li><a href="#">Amuseables</a></li>
-				<li><a href="#">Accessories</a></li>
-				<li><a href="#">Baby</a></li>
-				<li><a href="#">Books</a></li>
-				<li><a href="#">Personalised</a></li>
-				<li><a href="#">Gifts</a></li>
-				<li><a href="#">Jelly Journal</a></li>
+                <li>
+					<a class="hammenu-header" href="#">New</a>
+				</li>
+                <li>
+					<a class="hammenu-header" href="#">Explore all</a>
+				</li>
+                <li>
+					<button class="hammenu-header" aria-label="Discover menu">
+						Discover
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<ul>
+							<li><a href="#">Christmas</a></li>
+							<li><a href="#">Autumn & Winter</a></li>
+							<li><a href="#">Coming soon</a></li>
+							<li><a href="#">Best Sellers</a></li>
+							<li><a href="#">Back In Stock</a></li>
+							<li><a href="#">All Soft Toys</a></li>
+							<li><a href="#">Bashfull Bunnies</a></li>
+							<li><a href="#">All Bashfull</a></li>
+							<li><a href="#">Bartholomew Bear & Friends</a></li>
+							<li><a href="#">Little Toys</a></li>
+							<li><a href="#">Dressed Up Toys</a></li>
+							<li><a href="#">Super Soft & Cuddly</a></li>
+							<li><a href="#">Valentines Day</a></li>
+							<li><a href="#">View All →</a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Animals menu">
+						Animals
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Amuseables menu">
+						Amuseables
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Accessories menu">
+						Accessories
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Baby menu">
+						Baby
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Books menu">
+						Books
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Personalised menu">
+						Personalised
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<button class="hammenu-header" aria-label="Gifts menu">
+						Gifts
+						<svg aria-hidden="true">
+						<use href="/icons/icons.svg#plusIcon"></use>
+						</svg>
+					</button>
+					<div class="dropdown-content">
+						<p></p>
+					</div>
+				</li>
+				<li>
+					<a class="hammenu-header" href="#">Jelly Journal</a>
+				</li>
             </ul>
 
 			<ul class="hammenu-algemeen">
-				<li><a href="#">Account</a></li>
-				<li><a href="#">Wishlist</a></li>
-				<li><a href="#">Bag</a></li>
+				<li><img src="/images/jellycat-account.svg" alt="" aria-hidden="true">
+					<a href="#">Account</a>
+				</li>
+				<li><svg aria-hidden="true">
+						<use href="/icons/icons.svg#heartIcon"></use>
+					</svg>
+					<a href="#">Wishlist</a>
+				</li>
+				<li><svg aria-hidden="true">
+						<use href="/icons/icons.svg#bagIcon"></use>
+					</svg>
+					<a href="#">Bag</a>
+				</li>
 			</ul>
 			
 			<a href="#">Get In Touch</a>
@@ -69,34 +205,72 @@
         
         
         <!-- Logo (centered) -->
-        <a href="" class="logo">
+        <a href="/productoverview.html" class="logo">
             <img src="images/jellycat-logo.png" alt="Jellycat logo">
         </a>
         
         <!-- Right side icons -->
         <div class="nav-icons">
-            <a href="" aria-label="Account">
-                <svg width="24" height="24">
+            <a href="#" aria-label="Account">
+                <svg width="24" height="24" aria-hidden="true">
   					<use href="icons/icons.svg#userIcon"/>
 				</svg>
             </a>
-            <a href="" aria-label="Favorieten">
-                <svg width="24" height="24">
+            <a href="#" aria-label="Favorieten">
+                <svg width="24" height="24" aria-hidden="true">
 					<use href="icons/icons.svg#heartIcon"/>
 				</svg>
             </a>
             <button aria-label="Winkelwagen">
-				<svg>
+				<svg aria-hidden="true">
                 <use href="icons/icons.svg#bagIcon"/>
 				</svg>
             </button>
         </div>
     </nav>
+
+		<div class="navmenu-pages">
+			<ul>
+				<li>
+					<a href="#">New</a>
+				</li>
+				<li>
+					<a href="#">Explore all</a>
+				</li>
+				<li>
+					<a href="#">Discover</a>
+				</li>
+				<li>
+					<a href="#">Animals</a>
+				</li>
+				<li>
+					<a href="#">Amuseables</a>
+				</li>
+				<li>
+					<a href="#">Accessories</a>
+				</li>
+				<li>
+					<a href="#">Baby</a>
+				</li>
+				<li>
+					<a href="#">Books</a>
+				</li>
+				<li>
+					<a href="#">Personalised</a>
+				</li>
+				<li>
+					<a href="#">Gifts</a>
+				</li>
+				<li>
+					<a href="#">Jelly Journal</a>
+				</li>
+			</ul>
+		</div>
 	</header>
 
 	<main>
 		<section class="section1-christmas">
-			<img src="images/christmas-jellycat-snow.jpg" alt="jellycats in the snow">
+			<img src="images/christmas-jellycat-snow.jpg" alt="Jellycat plush toys in the snow">
 
 			<div class="section1-text">
 				<h2>Say hello to our Christmas Jellies!</h2>
@@ -111,7 +285,7 @@
 			<!-- Carrousel -->
 			 <ul>
 				<li>
-					<img src="images/bartholomew-bear-snowsuit.webp" alt="Brownbear with snowsuit">
+					<img src="images/bartholomew-bear-snowsuit.webp" alt="Bartholomew Bear in blue snowsuit">
 
 					<div class="carrousel-text">
 						<h2>Bartholomew Bear 'Snow Suit'</h2>
@@ -130,7 +304,7 @@
 				</li>
 
 				<li>
-					<img src="images/peanut-penguin.jpg" alt=" peanut penguin">
+					<img src="images/peanut-penguin.jpg" alt="Small black and white penguin">
 					
 					<div class="carrousel-text">
 						<h2>Peanut Penguin</h2>
@@ -139,7 +313,7 @@
 				</li>
 
 				<li>
-					<img src="images/amuseables-marshmellows.jpg" alt="Amuseables pair of marshmallows charm">
+					<img src="images/amuseables-marshmellows.jpg" alt="Two smiling marshmallow plush toys">
 					
 					<div class="carrousel-text">
 						<h2>Amuseables Pair of Marshmallows Charm</h2>
@@ -148,7 +322,7 @@
 				</li>
 
 				<li>
-					<img src="images/blossom-beige-bunny.jpg" alt="Beige bunny with blossom ears and feet">
+					<img src="images/blossom-beige-bunny.jpg" alt="Beige bunny with floral patterned ears and feet">
 					
 					<div class="carrousel-text">
 						<h2>Blosson Beige Bunny 'Petal'</h2>
@@ -157,7 +331,7 @@
 				</li>
 
 				<li>
-					<img src="images/amuseables-lettertosanta.webp" alt="amuseable letter tot santa">
+					<img src="images/amuseables-lettertosanta.webp" alt="Plush toy shaped like a letter to Santa">
 					
 					<div class="carrousel-text">
 						<h2>Amuseables Letter To Santa</h2>
@@ -166,26 +340,39 @@
 				</li>
 			 </ul>
 
-			<button id="prev-btn">←</button>
-    		<button id="next-btn">→</button>
+			<button id="prev-btn" aria-label="Previous products">
+				<svg aria-hidden="true">
+					<use href="/icons/icons.svg#pijllinksIcon"></use>
+				</svg>
+			</button>
+    		<button id="next-btn" aria-label="Next products">
+				<svg aria-hidden="true">
+					<use href="/icons/icons.svg#pijlrechtsIcon"></use>
+				</svg>
+			</button>
 		</section>
 
 		<section class="section3-categorieen">
 			<h2 hidden>categorieen</h2>
 
-			<img src="images/exploreall-seal.jpg" alt="">
-			<a href="">Explore All</a>
+			<ul>
+				<li>
+					<img src="images/exploreall-seal.jpg" alt="White seal plush toy">
+					<a href="">Explore All</a>
+				</li>	
 
-			<img src="images/lazulia-lilac-dragon-bestsellers.jpg" alt="">
-			<a href="#">Bestsellers</a>
-
-			<img src="images/amuseables-cheese-fondue.jpg" alt="">
-			<a href="">Amuseables</a>
+				<li>
+					<img src="images/lazulia-lilac-dragon-bestsellers.jpg" alt="Purple dragon plush toy">
+					<a href="#">Bestsellers</a>
+				</li>
+				<li>
+					<img src="images/amuseables-cheese-fondue.jpg" alt="Cheese fondue Amuseable plush toy">
+					<a href="">Amuseables</a>
+				</li>
+			</ul>
 		</section>
 
 		<article class="article1-main">
-			<img src="images/blossoms-catwalk-article-small.jpg" alt="">
-
 			<div class="article1-main-text">
 				<h2>Born in Londen. Loved worldwide.</h2>
 				<p>Welcome to the home of the Jellycat family where our  mission is to share joy! Expect the unexpected. 
@@ -193,6 +380,10 @@
 					make them part of your family too.
 				</p>
 			</div>
+			
+			<img class="imgarticle-small" src="images/blossoms-catwalk-article-small.jpg" alt="Blossom bunnies on a catwalk">
+			<img class="imgarticle-big" src="images/blossoms-catwalk-article-big.jpg" alt="Blossom bunnies on a catwalk">
+
 		</article>
 	</main>
 
