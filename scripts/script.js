@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdownHeaders = document.querySelectorAll('.dropdown-header');
     const hammenuHeaders = document.querySelectorAll('.hammenu-header');
     
-    // ===== HAMBURGER MENU =====
+    // ===== HAMBURGER MENU ===== - code van vorig jaar
     if (hamMenu && offScreenMenu) {
     // Open menu
     hamMenu.addEventListener("click", () => {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 }
     
-    // ===== CARROUSEL =====
+    // ===== CARROUSEL ===== - claude
 
     if (list) {
     const items = Array.from(list.querySelectorAll('li'));
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 }
 
-//////// SLIDER ////////////
+//////// SLIDER //////////// - claude
 
     if (slide) {
     const items = Array.from(slide.querySelectorAll('li'));
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 }
     
-    // ===== WE SAY / YOU SAY QUOTES =====
+    // ===== WE SAY / YOU SAY QUOTES ===== - claude
     if (buttons.length > 0 && quotes.length > 0) {
         // Start: eerste zichtbaar
         quotes.forEach((q, i) => q.style.display = i === 0 ? "block" : "none");
@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
-   // ===== DROPDOWN MENU =====
+   // ===== DROPDOWN MENU ===== claude
     if (dropdownHeaders.length > 0) {
         dropdownHeaders.forEach(button => {
             button.addEventListener('click', () => {

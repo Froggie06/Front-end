@@ -25,10 +25,31 @@
 	--color-text:#2c2a29;
 	--color-background:#eee;
 	--link-color: #2c2a29;
+	--background-color: white;
+	--border-color: #111;
+	--button-bg: white;
+	--nav-bg: white;
+	--light-bg: #f5f5f5;
+	--border-light: #cecece;
+	--text-gray: #666;
+	--svg-color: #000;
 }
 
-
-
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-text: #e5e5e5;
+		--color-background: #1a1a1a;
+		--link-color: #e5e5e5;
+		--background-color: #2c2a29;
+		--border-color: #e5e5e5;
+		--button-bg: #2c2a29;
+		--nav-bg: #2c2a29;
+		--light-bg: #333;
+		--border-light: #555;
+		--text-gray: #b3b3b3;
+		--svg-color: #e5e5e5;
+	}
+}
 
 
 /****************/
@@ -40,14 +61,14 @@
 /************/
 
 header p {
-	background-color: #f5f5f5;
+	background-color: var(--light-bg);
 	padding-top: .60rem;
 	padding-bottom: 0.70rem;
 	text-align: center;
 	font-weight: 300;
 	font-size: .75rem;
 	line-height: 1rem;
-	color: var(--text-color);
+	color: var(--color-text);
 	
 }
 
@@ -59,7 +80,7 @@ header img {
 
 button { 
 	border: none;
-	background-color: white;
+	background-color: var(--button-bg);
 }
 
 
@@ -73,7 +94,7 @@ nav {
 	align-items: center;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-
+	background-color: var(--nav-bg);
 }
 
 .logo {
@@ -158,13 +179,16 @@ nav {
 		width: 17.375rem;
 		height: 2.5rem;
 		border-radius: 0.3em;
-		border: 1px solid silver
+		border: 1px solid silver;
+		background-color: var(--background-color);
 		
 	}
 
 	input {
 		border: none;
 		width: 14rem;
+		background-color: var(--background-color);
+		color: var(--color-text);
 		
 	}
 
@@ -173,10 +197,11 @@ nav {
     display: flex;
     padding: 1.2em 1.2em 0 1.2em;
     border-top: 1px solid rgb(214, 214, 214);
+	background-color: var(--nav-bg);
 }
 
 .navmenu-pages a {
-    color: var(--color-link);
+    color: var(--link-color);
     padding-left: 1em;
     padding-right: 1em;
     text-transform: uppercase;
@@ -231,7 +256,7 @@ nav {
 
 .hamburgerIcon path {
   fill: none; 
-  stroke: #000;
+  stroke: var(--svg-color);
   stroke-width: 2.5; 
   stroke-linecap: square;
   transition: all 0.3s ease-in-out;
@@ -260,7 +285,7 @@ nav {
 .nav-icons svg {
 	width: 24px;
 	height: 24px;
-	color: #000;
+	color: var(--svg-color);
 }
 
 .nav-icons{
@@ -290,7 +315,7 @@ nav {
 .off-screen-menu {
     display: flex;
     flex-direction: column;    
-    background-color: white;
+    background-color: var(--background-color);
     width: 100%;
     height: 100dvh; /* Dynamic viewport height - beter voor mobiel */
     position: fixed;
@@ -311,7 +336,7 @@ nav {
 }
 
 .off-screen-menu a {
-	color: var(--color-link);
+	color: var(--link-color);
 }
 
 .off-screen-menu.active {
@@ -330,6 +355,7 @@ body.menu-open {
 .off-screen-menu svg{
 	width: 48px;
   	height: 48px;
+	color: var(--svg-color);
 }
 
 .off-screen-menu-heading {
@@ -359,6 +385,12 @@ body.menu-open {
 	padding:  2.5em 1.5em 5em 2.5em ;
 }
 
+@media (prefers-color-scheme: dark) {
+	.off-screen-menu > a:last-child {
+		background-color: #1a1a1a;
+	}
+}
+
 /* uitklap pages */
 .hammenu-pages svg {
 	width: 24px;
@@ -368,7 +400,7 @@ body.menu-open {
 .hammenu-pages {
 	padding-top: .25rem;
     padding-bottom: 2.5rem;
-	border-bottom: 1px solid #2c2a29;
+	border-bottom: 1px solid var(--color-text);
 	padding-left: 2.25rem;
     padding-right: 2.25rem;
 	padding-right: 2.25rem;
@@ -391,7 +423,7 @@ body.menu-open {
 
 	font-size: 1.2em;
 	font-weight: 350;
-	color: #333;
+	color: var(--color-text);
 
 	
 }
@@ -404,7 +436,7 @@ body.menu-open {
 .hammenu-pages a {
 	font-size: 1.2em;
 	font-weight: 350;
-	color: #333;
+	color: var(--color-text);
 }
 
 .dropdown-content {
@@ -424,7 +456,7 @@ body.menu-open {
 }
 
 .dropdown-content a {
-    color: #666;
+    color: var(--text-gray);
     font-size: .9375rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -485,6 +517,12 @@ body.menu-open {
 	background-color: rgba(203, 227, 226, 1);
 }
 
+@media (prefers-color-scheme: dark) {
+	.section1-christmas {
+		background-color: rgba(30, 50, 50, 1);
+	}
+}
+
 .section1-christmas img {
 	height: 44rem;
 	max-height: 400px;
@@ -508,7 +546,7 @@ body.menu-open {
 	font-size: 1.5rem;
 	line-height: 1.75rem;
 	margin-bottom: 1.5rem;
-	color: var(--text-color);
+	color: var(--color-text);
 }
 
 .section1-text p {
@@ -516,12 +554,12 @@ body.menu-open {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	margin-bottom: 2rem;
-	color: var(--text-color);
+	color: var(--color-text);
 }
 
 .section1-text a {
     color: var(--link-color);
-    border: 1px solid #111;;
+    border: 1px solid var(--border-color);
     padding: .6rem 1rem;
     display: block; 
 	font-size: 1rem;
@@ -569,6 +607,7 @@ body.menu-open {
 .carrousel {
 	position: relative;
 	overflow: hidden;
+	background-color: var(--nav-bg);
 }
 
 .carrousel ul {
@@ -582,6 +621,7 @@ body.menu-open {
 	align-items: center;
 	will-change: transform;
 	gap: 40px;
+	
 }
 
 .carrousel li {
@@ -596,7 +636,7 @@ body.menu-open {
 	font-size: .875rem;
 	font-weight: 500;
 	line-height: 1.25rem;
-	color: var(--text-color);
+	color: var(--color-text);
 }
 
 .carrousel p {
@@ -604,7 +644,7 @@ body.menu-open {
 	font-weight: 300;
 	line-height: 1.25rem;
 	padding: .5rem;
-	color: var(--text-color);
+	color: var(--color-text);
 }
 
 
@@ -681,6 +721,7 @@ body.menu-open {
 	grid-template-columns: repeat(1, 1fr);
 	padding-left: 0;
 	max-width: 120rem;
+	background-color: var(--nav-bg);
 }
 
 .section3-categorieen li {
@@ -720,6 +761,7 @@ body.menu-open {
 		margin-bottom: 4em;
 		padding-left: 3em;
 		padding-right: 3em;
+		
 	}
 }
 
@@ -727,7 +769,7 @@ body.menu-open {
 /* article */
 
 .article1-main {
-	background-color: rgba(245, 245,245, 1);
+	background-color: var(--light-bg);
 	display: flex;
 	flex-direction: column-reverse;
 }
@@ -812,10 +854,17 @@ footer {
 
 }
 
+@media (prefers-color-scheme: dark) {
+	footer {
+		background-color: #1a4d4d;
+	}
+}
+
 footer h3 {
 	font-weight: 500;
 	font-size: 1.25rem;
 	margin-bottom: 0.6em;
+	color: var(--color-text);
 }
 
 footer a {
@@ -853,6 +902,8 @@ footer ul {
 	font-size: 1rem;
 	font-weight: 300;
 	margin-top: 1.3em;
+	background-color: var(--background-color);
+	color: var(--color-text);
  }
 
  hr {
@@ -860,6 +911,12 @@ footer ul {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
  }
+
+ @media (prefers-color-scheme: dark) {
+	hr {
+		border-color: #666;
+	}
+}
 
 .visually-hidden {
   position: absolute;
@@ -932,6 +989,12 @@ footer ul {
 	border-top: 0.02em solid #ababab;
 }
 
+@media (prefers-color-scheme: dark) {
+	.breadcrumbs {
+		border-top-color: #666;
+	}
+}
+
 .breadcrumbs ol{
 	display: flex;
 	flex-direction: row;
@@ -956,6 +1019,12 @@ footer ul {
 	transform: rotate(15deg);
 }
 
+@media (prefers-color-scheme: dark) {
+	.breadcrumbs li:not(:first-child)::before {
+		border-right-color: #b3b3b3;
+	}
+}
+
 
 /* productcarrousel */
 
@@ -972,6 +1041,8 @@ footer ul {
 	top: 1rem;
 	left: 1rem;
 	z-index: 11;
+	background-color: var(--background-color);
+	color: var(--color-text);
 }
 
 .slider {
@@ -1023,6 +1094,7 @@ footer ul {
 #prev-btn svg, #next-btn svg{
 	width: 48px;
 	height: 48px;
+	color: var(--svg-color);
 }
 
 /* section 2 */
@@ -1036,6 +1108,7 @@ footer ul {
 	flex-direction: column;
 	align-items: center;
 	row-gap: .25rem;
+	background-color: var(--nav-bg);
 }
 
 .dragon h1 {
@@ -1043,12 +1116,14 @@ footer ul {
 	font-weight: 550;
 	margin-bottom: 8px;
 	line-height: 1.875rem;
+	color: var(--color-text);
 }
 
 .dragon p {
 	font-size: 1.375rem;
 	font-weight: 550;
 	line-height: 1.875rem;
+	color: var(--color-text);
 }
 
 .stars {
@@ -1063,6 +1138,7 @@ footer ul {
 
 .stars a {
 	padding-left: .5rem;
+	color: var(--link-color);
 }
 
 .dragon button {
@@ -1085,16 +1161,24 @@ footer ul {
 	color: var(--color-text);
 }
 
+@media (prefers-color-scheme: dark) {
+	.dragon button:first-of-type {
+		background-color: #555;
+	}
+}
+
 .dragon button:nth-of-type(2) {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 
-	border: 1px solid #111;
+	border: 1px solid var(--border-color);
 	padding-top: .875rem;
 	padding-bottom: .875rem;
 	padding-left: 2.25rem;
 	padding-right: 2.25rem;
+	background-color: var(--background-color);
+	color: var(--color-text);
 }
 
 .dragon button:nth-of-type(3) {
@@ -1103,6 +1187,13 @@ footer ul {
 	padding-bottom: .875rem;
 	padding-left: 2.25rem;
 	padding-right: 2.25rem;
+	color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+	.dragon button:nth-of-type(3) {
+		background-color: #1a7a7a;
+	}
 }
 
 @media (min-width: 768px) {
@@ -1159,6 +1250,12 @@ footer ul {
 	padding-top: 2.2em;
 }
 
+@media (prefers-color-scheme: dark) {
+	.wesay-yousay {
+		background-color: #1a7a7a;
+	}
+}
+
 .wesay-yousay ul {
 	display: flex;
 	justify-content: center;
@@ -1186,6 +1283,7 @@ footer ul {
 	font-size: 1.25rem;
 	text-transform: uppercase;
 	background-color: transparent;
+	color: var(--color-text);
 }
 
 
@@ -1198,6 +1296,7 @@ footer ul {
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1.625rem;
+	color: var(--color-text);
 }
 
 .quote::before {
@@ -1242,6 +1341,12 @@ footer ul {
 .wesay-yousay li.active {
 	background-image: url(/images/jellycat-bounce-overviewgif.gif);
 	border-bottom: 2px solid #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+	.wesay-yousay li.active {
+		border-bottom: 2px solid #666;
+	}
 }
 
 #quote1 {
@@ -1296,12 +1401,13 @@ footer ul {
 .dropdowns svg {
 	width: 24px;
 	height: 24px; 
+	color: var(--svg-color);
 }
 
 .dropdowns {
 	padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-	background-color: #f5f5f5;
+	background-color: var(--light-bg);
 }
 
 .dropdowns ul {
@@ -1310,8 +1416,8 @@ footer ul {
 }
 
  .dropdowns li {
-    border-bottom: 1px solid #cecece;
-	background-color: #f5f5f5;
+    border-bottom: 1px solid var(--border-light);
+	background-color: var(--light-bg);
 }
 
 .dropdowns li:last-child {
@@ -1322,7 +1428,7 @@ footer ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
-	background-color: #f5f5f5;
+	background-color: var(--light-bg);
     align-items: center;
     padding: 1.125rem 1rem;
     cursor: pointer;
@@ -1330,7 +1436,7 @@ footer ul {
 
 	font-size: 1.5em;
 	font-weight: 600;
-	color: #333;
+	color: var(--color-text);
 	text-transform: uppercase;
 }
 
@@ -1348,7 +1454,7 @@ footer ul {
 }
 
 .dropdown-content p {
-    color: #666;
+    color: var(--text-gray);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -1368,6 +1474,7 @@ footer ul {
     line-height: 1.5625rem;
 	font-weight: 500;
 	margin-bottom: .5rem;
+	color: var(--color-text);
 }
 
 .dropdown-content p:first-of-type {

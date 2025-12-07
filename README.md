@@ -36,17 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://eu.jellycat.com/?_gl=1*1a3wxym*_up*MQ..*_gs*MQ..&gclid=EAIaIQobChMI5v-R4LPskAMVtJRQBh2FBzY_EAAYASAAEgJAEPD_BwE&gbraid=0AAAAADtxRQCoQsrTDbBaRgl2RKwYXggnp 
+  https://eu.jellycat.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img alt="image" src="https://github.com/user-attachments/assets/60e7c60f-873e-4e29-ae0b-7e973e57f6d0" />
-
+  Home scherm  
+  <img src="readme-images/home-scherm.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img width="780" height="13798" alt="image" src="https://github.com/user-attachments/assets/16ef2566-83ea-46dc-9d22-cfa6553bf15e" />
-
+  <img src="readme-images/overzichtscherm.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -57,9 +55,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_1.jpg" alt="pagina 1 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_2.jpg" alt="pagina 2 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_3.jpg" alt="pagina 3 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_4.jpg" alt="pagina 4 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_5.jpg" alt="pagina 5 wcag checklist">
+
+
   ### Bevindingen
-  1. de pagina heeft een knop met veel verschillende opties voor toegankelijkheid 
-  2. kan niet overal naar toe tappen
+  Lijst met je bevindingen die in de test naar voren kwamen:
+  1. Mij viel op de de website best wel toegangkelijk al was, zo was er al een menu waarop je alle toegangkelijkheids instellingen kon doen zoals voor kleuren blind maar ook lettertype vergroten.
+  2. de website was alleen niet helemaal goed semantisch opgebouwd waardoor dat de toegankelijkheid wel omlaag trok.
 
 </details>
 
@@ -71,15 +77,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  ![breakdown-schets-1](https://github.com/user-attachments/assets/e658979d-1860-411e-b58a-fd354bd04fdd)
+  <img src="readme-images/breakdown-schets-1.jpg" width="375px" alt="breakdown van de hele pagina">
 
 
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -210,13 +210,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Korte omschrijving met plaatjes:
+
+  Ik heb echt geleerd hoe ik een website responsive kon maken en hoe ik een carrousel maak en dat vind ik erg leuk.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+
+  De carrousel werkt helaas niet helemaal responsive op de 2e pagina maar dan had er echt mee te maken dat ik nog daarvoor te weinig van javascript af weet en op de website maakte ze gebruik van een bepaalde slider libary. Als ik meer tijd zou hebben had ik graag nog de nav in de header op desktop verder willen uitwerken met hover maar dat was een kwestie van tijd en geen moeilijkheid. Sommige iconen heb ik niet zoals op de website omdat deze niet na te maken waren daar baal ik wel van dat dat niet lukte.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -234,8 +238,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. claude - gebruikt om de nav te structureren in html, uitgebreidde carrousel voor infinity effect, dropdown menu's, we say you say switch alleen javascript, javascript laten ordenen 
+  2. Chatgpt - tips voor toegankelijkheid
+  3. MDN - basis carrousel, basis searchbar, light/dark mode
+  4. css-tricks - functies van grid
+ 
 </details>
