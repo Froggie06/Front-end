@@ -68,6 +68,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. de website was alleen niet helemaal goed semantisch opgebouwd waardoor dat de toegankelijkheid wel omlaag trok.
   3. Op de screenreader was de website aardig chaotisch, bepaalde img werken ook niet voor gelezen en buttons ook niet omdat die niet werden gebruikt, de divjes maakte het ook niet echt beter.
   4. Op de screenreader wordt veel nutteloze informatie verteld.
+  5. Er worden veel divs en spans gebruikt zonder een logische class of arialabels
+  6. de website support geen dark mode vanuit het systeem maar alleen uit het toegankelijkmenu waarin de kleuren een slecht contrast hebben. 
+  7. Het gebruik van headings heeft geen logische volgorde.
+  8. de website is responsive.
+
 
 </details>
 
@@ -170,11 +175,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   1. In mijn website heb ik duidelijkere tags gebruikt en betere namen voor headings wat ervoor zorgt dat ze op een screenreader ook duidelijker zijn.
   2. Website was al aarder toegankelijk toch heb ik de kleuren voor darkmode aangepast voor een betere gebruikerservaring.
-  3. Op een screenreader worden de buttons en img goed voorgelezen waardoor de website makkkelijker te gebruiken is. 
+  3. Op een screenreader worden de buttons en img goed voorgelezen met een duidelijke naam en beschrijving waardoor de website makkkelijker te gebruiken is. 
   4. Door het aria hidden element word de nutteloze info op iconen niet voorgelezen waardoor alleen het arialabel word benoemd met of het een button om link is. dit is verbeterd ten opzichte van het origineel.
   5. Bij tekstveld verteld de screenreader ook wat de interactie is voor de gebruiker net zoals het menu in de footer.
   6. Ik vind de screenreader op mijn website veel makkelijker en overzichtelijker te gebruiken.
+  7. de website is goed responsive alles past zich helemaal aan.
+  8. De knoppen en links zijn goed te onderscheiden.
+  9. de pagina kan ook op horizontale wijze worden gebruikt wat de andere niet kon.
 
+  conclusie, met de screenreader is de website overzichtelijk en makkelijk te gebruiken.
 </details>
 
 
