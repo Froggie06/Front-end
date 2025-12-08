@@ -159,11 +159,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_1.jpg" alt="pagina 1 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_2.jpg" alt="pagina 2 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_3.jpg" alt="pagina 3 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_4.jpg" alt="pagina 4 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_5.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_1.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_2.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_3.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_4.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_5.jpg" alt="pagina 5 wcag checklist">
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
