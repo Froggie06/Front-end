@@ -55,17 +55,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_1.jpg" alt="pagina 1 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_2.jpg" alt="pagina 2 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_3.jpg" alt="pagina 3 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_4.jpg" alt="pagina 4 wcag checklist">
-  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_5.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_1.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_2.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_3.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_4.jpg" alt="pagina 5 wcag checklist">
+  <img src="/readme-images/WCAG checklist - 2e versie_Pagina_5.jpg" alt="pagina 5 wcag checklist">
 
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   1. Mij viel op de de website best wel toegangkelijk al was, zo was er al een menu waarop je alle toegangkelijkheids instellingen kon doen zoals voor kleuren blind maar ook lettertype vergroten.
   2. de website was alleen niet helemaal goed semantisch opgebouwd waardoor dat de toegankelijkheid wel omlaag trok.
+  3. Op de screenreader was de website aardig chaotisch, bepaalde img werken ook niet voor gelezen en buttons ook niet omdat die niet werden gebruikt, de divjes maakte het ook niet echt beter.
 
 </details>
 
@@ -158,8 +159,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_1.jpg" alt="pagina 1 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_2.jpg" alt="pagina 2 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_3.jpg" alt="pagina 3 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_4.jpg" alt="pagina 4 wcag checklist">
+  <img src="/readme-images/FED 25-26 - Blok 2 - WCAG checklist Myrthe_Pagina_5.jpg" alt="pagina 5 wcag checklist">
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  1. In mijn website heb ik duidelijkere tags gebruikt en betere namen voor headings wat ervoor zorgt dat ze op een screenreader ook duidelijker zijn.
+  2. Website was al aarder toegankelijk toch heb ik de kleuren voor darkmode aangepast voor een betere gebruikerservaring.
+  3. Op een screenreader worden de buttons en img goed voorgelezen waardoor de website makkkelijker te gebruiken is.
 
 </details>
 
