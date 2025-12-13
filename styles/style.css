@@ -1300,7 +1300,7 @@ footer ul {
 }
 
 .quote::before {
-	background-image: url(/images/quote-marks.svg);
+	background-image: url(../images/quote-marks.svg);
 	content: '';
 	position: absolute;
     left: 2em;
@@ -1311,7 +1311,7 @@ footer ul {
 }
 
 .quote::after {
-	background-image: url(/images/quote-marks.svg);
+	background-image: url(../images/quote-marks.svg);
 	content: '';
 	position: absolute;
     right: 5em;
@@ -1339,7 +1339,7 @@ footer ul {
 }
 
 .wesay-yousay li.active {
-	background-image: url(images/jellycat-bounce-overviewgif.gif);
+	background-image: url(../images/jellycat-bounce-overviewgif.gif);
 	border-bottom: 2px solid #f5f5f5;
 }
 
@@ -1493,7 +1493,7 @@ footer ul {
 
 	.dropdowns::before {
 		content: "";
-		background-image: url(/images/jellycat-animated-cat-on-off-white-128-248.gif);
+		background-image: url(../images/jellycat-animated-cat-on-off-white-128-248.gif);
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: auto;
